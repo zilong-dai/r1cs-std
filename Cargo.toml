@@ -17,6 +17,7 @@ ark-ff = { version = "0.4.0", default-features = false }
 ark-ec = { version = "0.4.0", default-features = false }
 ark-std = { version = "0.4.0", default-features = false }
 ark-relations = { version = "0.4.0", default-features = false }
+ark-bls12-381 = { version = "0.4.0", features = ["curve"], default-features = false  }
 
 derivative = { version = "2", features = ["use_core"] }
 tracing = { version = "0.1", default-features = false, features = [ "attributes" ] }
@@ -25,7 +26,7 @@ num-traits = {version = "0.2", default-features = false }
 num-integer = { version = "0.1.44", default-features = false }
 
 [dev-dependencies]
-ark-test-curves = { version = "0.4.0", default-features = false, features = ["bls12_381_scalar_field", "bls12_381_curve", "mnt4_753_scalar_field"] }
+ark-test-curves = { version = "0.4.0", default-features = false, features = ["bls12_381_scalar_field", "bls12_381_curve", "mnt4_753_scalar_field", "mnt4_753_curve"] }
 ark-poly = { version = "0.4.0", default-features = false }
 paste = "1.0"
 ark-bls12-377 = { version = "0.4.0", features = ["curve"], default-features = false  }
